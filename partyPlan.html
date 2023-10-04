@@ -3,33 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Party Planner</title>
-    <link rel="stylesheet" href="partyPlan.css">
-    <script src="partyPlan.js"></script>
+    <title>Party List</title>
 </head>
 <body>
-    <h1>Party Planner</h1>
-    <ul id="party-list">
-    </ul>
+    <script defer src="partyPlan.js"></script>
+    
+    <h1> Party Time</h1>
 
-    <form id="party-form">
-        <h2>Add a New Party</h2>
-        <label for="party-name">Party Name:</label>
-        <input type="text" id="party-name" required>
-    
-        <label for="party-date">Date:</label>
-        <input type="date" id="party-date" required>
-    
-        <label for="party-time">Time:</label>
-        <input type="time" id="party-time" required>
-    
-        <label for="party-location">Location:</label>
-        <input type="text" id="party-location" required>
-    
-        <label for="party-description">Description:</label>
-        <textarea id="party-description" rows="4" required></textarea>
-    
-        <button type="submit">Add Party</button>
-    </form>
+    <form id="newPartyForm">
+        
+        <label>
+        Field Name
+        <input type="text" name="name" placeholder="party name" />
+        </label>
+        
+        <br>
+        
+        <label>
+        Date
+        <input type="date" name="date" placeholder="party date" />
+        </label>
+        <br>
+
+        <label>
+        Location
+        <input type="text" name="location" placeholder="party name" />
+        </label>
+        <br>
+
+        <label>
+        Description
+        <input type="text" name="description" placeholder="description" />
+        </label>
+        
+        <button>Submit</button>
+
+        <section id="partyList"></section>
+        </form>
+
+
+<!-- inputs for name, date, time, location, description
+
+place to put the list of parties -->
+
+
 </body>
 </html>
